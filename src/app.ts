@@ -9,6 +9,6 @@ const app = express();
 app.use(cors()).use(router);
 app.use(express.json());
 
-// db().then(() => console.log('conection to data base is ready'));
+db().then(() => console.log('conection to data base is ready'));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
